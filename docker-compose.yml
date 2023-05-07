@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+
+  redis:
+    image: redis
+    container_name: redis
+    # environment:
+    #   - REDIS_ARGS=--requirepass password
+    command: ["redis-server", "/etc/redis/redis.conf"]
+    volumes:
+      - ./redis/redis.conf:/etc/redis/redis.conf
+    # ports:
+    #   - 6379:6379
