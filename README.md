@@ -9,6 +9,7 @@ Auth password
 ```
 
 ## Command usage
+- set https://redis.io/commands/set/
 ``` bash
 # set key
 set key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL]
