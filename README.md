@@ -5,7 +5,7 @@
 redis-cli
 
 # Authentication
-Auth password
+AUTH <password>
 ```
 
 ## Command usage
@@ -95,4 +95,19 @@ hdel key field [field ...]
 
 # check exist
 hexists key field
+```
+
+## Redis Configuration
+``` bash
+# SNAPSHOTTING
+save <seconds> <changes>
+# save 900 1
+# save 300 10
+# save 60 10000
+
+# APPEND ONLY MODE
+appendonly yes
+
+# PASSWORD
+requirepass password
 ```
